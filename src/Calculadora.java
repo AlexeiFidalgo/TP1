@@ -25,10 +25,14 @@ public class Calculadora {
 			return resultado;
 			
 		} 
+		public Integer resta(Integer a, Integer b) {
+			integer resultado=0;
+			resultado=a-b;
+			return resultado;
+			
+		}
 		switch (opcion) {
-		case 2:
-			resultado = a - b;
-			break;
+		
 		case 3:
 			resultado = a + b;
 			break;
