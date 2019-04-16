@@ -1,6 +1,42 @@
 import java.util.Scanner;
 
 public class Calculadora {
+	private Integer a;
+	private Integer b;
+
+	public Calculadora(Integer a, Integer b) {
+
+		this.a = a;
+		this.b = b;
+	}
+
+	public Integer multiplicacion(Integer a, Integer b) {
+		Integer resultado = 0;
+		resultado = a * b;
+		return resultado;
+
+	}
+
+	public Integer resta(Integer a, Integer b) {
+		Integer resultado = 0;
+		resultado = a - b;
+		return resultado;
+
+	}
+	
+	public Integer suma(Integer a, Integer b) {
+		Integer resultado = 0;
+		resultado = a + b;
+		return resultado;
+	}
+	
+	public Double division(Double a, Double b) {
+		Double resultado = 0.0;
+		resultado = a / b;
+		return resultado;
+	}
+	
+
 	public static void main(String[] args) {
 
 		Scanner teclado = new Scanner(System.in);
@@ -18,21 +54,9 @@ public class Calculadora {
 		a = teclado.nextInt();
 		System.out.println("Ingrese el segundo numero");
 		b = teclado.nextInt();
-		
-		public Integer multiplicacion(Integer a, Integer b) {
-			integer resultado=0;
-			resultado=a*b;
-			return resultado;
-			
-		} 
-		public Integer resta(Integer a, Integer b) {
-			integer resultado=0;
-			resultado=a-b;
-			return resultado;
-			
-		}
+
 		switch (opcion) {
-		
+
 		case 3:
 			resultado = a + b;
 			break;
