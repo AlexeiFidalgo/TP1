@@ -18,10 +18,14 @@ public class Calculadora {
 		a = teclado.nextInt();
 		System.out.println("Ingrese el segundo numero");
 		b = teclado.nextInt();
+		
+		public Integer multiplicacion(Integer a, Integer b) {
+			integer resultado=0;
+			resultado=a*b;
+			return resultado;
+			
+		} 
 		switch (opcion) {
-		case 1:
-			resultado = a * b;
-			break;
 		case 2:
 			resultado = a - b;
 			break;
