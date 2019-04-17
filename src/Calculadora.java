@@ -10,32 +10,31 @@ public class Calculadora {
 		this.b = b;
 	}
 
-	public Integer multiplicacion(Integer a, Integer b) {
+	public Integer multiplicacion() {
 		Integer resultado = 0;
-		resultado = a * b;
+		resultado = this.a * this.b;
 		return resultado;
 
 	}
 
-	public Integer resta(Integer a, Integer b) {
+	public Integer resta() {
 		Integer resultado = 0;
-		resultado = a - b;
+		resultado = this.a - this.b;
 		return resultado;
 
 	}
-	
-	public Integer suma(Integer a, Integer b) {
+
+	public Integer suma() {
 		Integer resultado = 0;
-		resultado = a + b;
+		resultado =this.a + this.b;
 		return resultado;
 	}
-	
-	public Double division(Double a, Double b) {
+
+	public Double division() {
 		Double resultado = 0.0;
-		resultado = a / b;
+		resultado = this.a / this.b;
 		return resultado;
 	}
-	
 
 	public static void main(String[] args) {
 
@@ -51,17 +50,21 @@ public class Calculadora {
 		} while (opcion < 1 && opcion > 4);
 
 		System.out.println("Ingrese el primer numero");
-		a = teclado.nextInt();
+
 		System.out.println("Ingrese el segundo numero");
-		b = teclado.nextInt();
 
+		Calculadora miCalculadora = new Calculadora(a = teclado.nextInt(), b = teclado.nextInt());
 		switch (opcion) {
-
+		case 1:
+			miCalculadora.multiplicacion();
+			break;
+		case 2: 
+			miCalculadora.resta();
 		case 3:
-			resultado = a + b;
+			miCalculadora.suma();
 			break;
 		case 4:
-			resultado = a / b;
+			miCalculadora.division();
 			break;
 		}
 
