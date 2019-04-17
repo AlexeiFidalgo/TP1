@@ -30,8 +30,8 @@ public class Calculadora {
 		return resultado;
 	}
 
-	public Double division() {
-		Double resultado = 0.0;
+	public Integer division() {
+		Integer resultado = 0;
 		resultado = this.a / this.b;
 		return resultado;
 	}
